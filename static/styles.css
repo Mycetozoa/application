@@ -1,0 +1,224 @@
+
+.container { width: 1200px; margin:0 auto; background: #ffffff;}
+
+h1 {
+   font-size: 40px;
+   font-family: "Arial - Bold MT", sans-serif;
+   color: #525252;
+   text-transform: uppercase;
+   white-space: nowrap;
+   line-height: 48px;
+   padding-top: 70px;
+}
+
+h2 {
+   font-size: 36px;
+	 font-family: "Copperplate Gothic", sans-serif;
+   color: #083850;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+p {
+   font-size: 18px;
+   font-family: "Arial", sans-serif;
+   color: #404040;
+   line-height: 24px;
+}
+
+header {
+   background:#ffffff ;
+   width: 1200px;
+   height: 132px;
+}
+
+.top-menu {
+   display: flex;
+   padding-left: 665px;
+   list-style: none;
+}
+.top-menu li {
+   padding-top:73px;
+   padding-left: 36px;
+}
+.top-menu a {
+   text-decoration-line: none;
+   color: #525252;
+   font-family: "Arial MT", sans-serif;
+   font-size: 18px;
+}
+
+#button {
+  position:absolute;
+  width: 300px;
+  height: 64px;
+  z-index: 4;
+  margin-top:38px;
+  padding-top: 0;
+}
+
+.send {
+  position:absolute;
+  top:500px;
+  text-transform: uppercase;
+  z-index: 5;
+  margin-left: 204px;
+}
+
+.send a {
+  text-decoration-line: none;
+  color: #ffffff;
+}
+
+.top-image {
+  display: flex;
+  width: 577px;
+  height: 558px;
+  float: right;
+  margin-right: -35px;
+  padding-bottom: 69px;
+}
+
+#top-spore {
+  position: absolute;
+  display: block;
+  width: 577px;
+  height: 558px;
+  z-index: 0;
+  clip-path: inset(0 35px 0 0);
+}
+
+#top-logo {
+  display: block;
+  width: 346px;
+  height: 359px;
+  padding-top: 89px;
+  padding-left: 115px;
+  z-index: 1;
+}
+
+.pink-block {
+  display: flex;
+  width: 1200px;
+  height: 417px;
+  background:#fee6e0;
+}
+
+.pink-block div {
+  width: 300px;
+  height: 290px;
+  margin-top:-27px;
+}
+
+.pink-block h3 {
+  margin:0;
+  padding-top: 14px;
+  color: #404040;
+  font-family: "Arial - Bold MT", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.pink-block p {
+  padding-top: 32px;
+  margin:0;
+}
+
+.icon-back {
+  position: relative;
+  display: block;
+}
+
+#icon-hand {
+  position: absolute;
+  margin-top: -85px;
+  margin-left: 30px;
+  z-index: 9;
+}
+#icon-mol {
+  position: absolute;
+  margin-top: -88px;
+  margin-left: 22px;
+  z-index: 9;
+}
+
+#icon-round {
+  position: absolute;
+  margin-top: -85px;
+  margin-left: 24px;
+  z-index: 9;
+}
+
+.block-size  { width: 295px; height: 189px;}
+
+.shear-big   { margin-left:410px; }
+.shear       { margin-left:111px; }
+.shear-small { margin-left:50px;  }
+.shear-right { margin-right:111px;}
+
+.blue-spore {
+  position: relative;
+  display: block;
+  float:right;
+  width: 579px;
+  height: 558px;
+  margin-right:-285px ;
+  padding-top: 57px;
+  clip-path: inset(0 285px 0 0);
+
+}
+
+#Mycetozoa {
+  padding-top: 77px;
+  width: 633px;
+  height: 534px;
+}
+
+.orange-spore {
+  position: relative;
+  float:left;
+  width: 575px;
+  height: 552px;
+  padding-top: 169px;
+  margin-left:-234px ;
+  padding-bottom: -11px;
+  clip-path: inset(0 0 0 234px);
+}
+
+#tech {
+  padding-top: 82px;
+  padding-bottom: 69px;
+  width: 677px;
+  height: 559px;
+}
+
+footer {
+  position: relative;
+	width: 1200px;
+	height: 305px;
+	background: #82c3ce;
+}
+
+.b1 { padding-top: 30px;  padding-bottom: 26px;}
+.b3 { text-align: right;  margin-top: -241px;  }
+.b4 { text-align: right;  padding-top: 160px;  }
+
+.footer-logo {
+  position: absolute;
+	width: 207px;
+	height: 215px;
+  z-index: 3;
+  bottom:45px;
+  left:497px;
+}
+
+.icons-social {
+  position: absolute;
+  width: 152px;
+  height: 80px;
+  z-index: 3;
+  bottom:190px;
+  right: 111px;
+}
+
+.contacts p { color: #ffffff;}

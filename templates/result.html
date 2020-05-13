@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+      <meta charset="utf-8">
+      <title>MycetoZoa</title>
+      <!--<link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">-->
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+ <div class="container">
+
+   <header>
+       <ul class="top-menu">
+          <li><a href= "#bMycetozoa" >MycetoZoa</a></li>
+          <li><a href= "#tech" >Технология</a></li>
+          <li><a href="#footer" >Контакты</a></li>
+          <li><a href="index_eng.html" >Ru|Eng</a></li>
+        </ul>
+   </header>
+
+    <div class="top-image">
+        <img id="top-spore" src="{{ url_for('static', filename='images/top-blue-spore.svg') }}">
+        <img id="top-logo"  src="{{ url_for('static', filename='images/logo.svg') }}">
+    </div>
+
+     <form class="form-signin" method=post enctype=multipart/form-data>
+         <h1 class="shear">Дифференциация<br>микрофотографий<br>спор миксомицетов</h1>
+         <p class="shear">Prediction</p>
+         <h5 class="shear">Detected Image: {{ class_name }}</h5>
+    </form>
+
+   <section class="pink-block">
+      <div class="shear block-size">
+          <img class="icon-back"   src="{{ url_for('static', filename='images/icon-back.svg') }}">
+          <img id="icon-hand"      src="{{ url_for('static', filename='images/icon-hand.svg') }}">
+        <h3>УДОБНЫЙ ИНТЕРФЕЙС</h3>
+        <p>Современный темп жизни требует гибкого подхода к исследовательской деятельности.
+        <br>Больше не нужно держать гигабайты скриптов, чтобы обработать данные.</p>
+       </div>
+      <div class="shear-small block-size">
+          <img class="icon-back"   src="{{ url_for('static', filename='images/icon-back.svg') }}">
+          <img id="icon-mol"       src="{{ url_for('static', filename='images/icon-mol.svg') }}">
+        <h3>НЕЙРОННЫЕ СЕТИ</h3>
+        <p>В основе MycetoZoa лежит метод свёрточных нейронных сетей, позволивший эффективно
+        обучить систему на распознавание различных видов спор миксомицетов рода Diderma.</p>
+       </div>
+      <div class="shear-small block-size">
+          <img class="icon-back"   src="{{ url_for('static', filename='images/icon-back.svg') }}">
+          <img id="icon-round"     src="{{ url_for('static', filename='images/icon-round.svg') }}">
+        <h3>ПОДРОБНАЯ АНАЛИТИКА</h3>
+        <p>Точность распознавания 80+%. Помимо данных по каждому микроснимку, MycetoZoa позволяет
+        скачать XLS-файл с отчетом о результатах распознавания для последующей работы с данными.</p>
+       </div>
+   </section>
+
+  <img class="blue-spore"  src="{{ url_for('static', filename='images/spore-side-blue.svg') }}">
+
+   <section class="shear" id="Mycetozoa">
+  <h2>Mycetozoa</h2>
+  <p>Споры — это одноклеточные, переносимые по воздуху пропагулы различных организмов
+    (от растений и грибов до протистов), обычно размером 5-50 мкм, сферические и эллипсоидные,
+    а их поверхность покрыта различными орнаментами, состоящими из бородавок, шипов,
+    гребней и других их комбинаций.<br>Этот ландшафт спор часто варьируются между
+    видами.<br>Для грибов и плесневых грибов орнаментация спор является одним из наиболее
+    характерных признаков дифференциации видов.</p>
+  <p>Дифференциация ландшафта спор до сих пор является областью квалифицированных
+    таксономистов, необходимо хорошо разбираться в предметной области, чтобы запоминать
+    и различать разнообразие таких ландшафтов.<br>Количественный подход позволит
+    использовать параметры, описывающие орнаментацию спор, во всех видах анализа,
+      таких как многомерная статистика, числовая таксономия и т.д.</p>
+  <p>Таким образом, нами была поставлена задача разработать метод автоматического
+    количественного анализа паттернов орнаментации спор из СЭМ-микрофотографий, выполненных
+    с сушкой в ​​критической точке.</p>
+   </section>
+
+   <img class="orange-spore" src="{{ url_for('static', filename='images/spore-side-orange.svg') }}">
+
+   <section class="shear-big" id="tech">
+  <h2>Технология</h2>
+  <p> Искусственные нейронные сети представляют собой упрощённый аналог естественных
+    нейронных сетей, существующих в головном мозге человека. В настоящее время нейронные
+    сети считаются одним из лучших алгоритмов для решения задач машинного зрения,
+    распознавания речи, постановки медицинских диагнозов и т.д.</p>
+  <p> Машинное обучение  — это подраздел искусственного интеллекта, изучающий методы
+    построения алгоритмов, способных к обучению: ученые «скармливают» системе большой
+    объём данных (предварительно размеченных), который нужно научить машину определять.
+    Машина просеивает эти данные через себя и учится определять: это нужный объект или
+    это не он. И так со временем система становится способной распознавать заданные объекты:
+    от цифр до животных, от самолётов до типов растений.</p>
+  <p>Технология распознавания MycetoZoa работает на подвиде нейронных сетей — свёрточных
+    нейронных сетях.<br>Такие нейросети крайне эффективны для распознавания визуальных
+    паттернов (образов, визуальных объектов) в цифровых изображениях и видео, они
+    требуют минимальной предварительной обработки изображений, устойчивы к искажениям
+    и способны распознавать паттерны в больших пределах изменчивости.</p>
+   </section>
+
+   <footer class="contacts" id="footer">
+
+     <p class="b1 shear">Дифференциация<br>СЭМ-микрофотографий<br>
+     спор миксомицетов рода<br>Diderma<br>
+     методами машинного<br>обучения</p>
+     <p class="shear">© 2019-2020 MycetoZoa.<br>
+      Все права защищены.</p>
+     <p class="b3 shear-right">Написать нам</p>
+     <p class="b4 shear-right">mycetozoa.app@gmail.com</p>
+
+     <img class="footer-logo"  src="{{ url_for('static', filename='images/logo.svg') }}">
+     <img class="icons-social" src="{{ url_for('static', filename='images/icons_social.svg') }}">
+
+   </footer>
+
+</div>
+</body>
+</html>

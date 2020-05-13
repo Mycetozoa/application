@@ -1,0 +1,5 @@
+Flask
+Pillow
+gunicorn
+https://download.pytorch.org/whl/cpu/torch-1.2.0%2Bcpu-cp36-cp36m-manylinux1_x86_64.whl
+torchvision==0.4.0

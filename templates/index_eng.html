@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+      <meta charset="utf-8">
+      <title>MycetoZoa</title>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+ <div class="container">
+
+   <header>
+       <ul class="top-menu">
+          <li><a href= "#Mycetozoa" >MycetoZoa</a></li>
+          <li><a href= "#tech" >Tech</a></li>
+          <li><a href="#footer" >Contacts</a></li>
+          <li><a href="index.html" >   Ru|Eng</a></li>
+        </ul>
+   </header>
+   
+    <div class="top-image">
+        <img id="top-spore" src="{{ url_for('static', filename='images/top-blue-spore.svg') }}">
+        <img id="top-logo"  src="{{ url_for('static', filename='images/logo.svg') }}">
+    </div>
+<form class="form-signin" method=post enctype=multipart/form-data>
+      <h1 class="shear">Recognition of<br>SEM micrographs
+      <br>Diderma species</h1>
+      <p class="shear">Select files to recognize</p>
+      <input type="file" name="file" class="form-conthrol-file" idf="inputfile#">
+<button img class="shear" typeid="submit">Upload</button>
+     </form>
+     
+    <script type="text/javascript">
+      $('#inputfile').bind('change', function() {
+          let fileSize = this.files[0].size/1024/1024; // this gives in MB
+          if (fileSize > 10) {
+            $("#inputfile").val(null);
+            alert('file is too big. images more than 10MB are not allowed')
+            return
+          }
+
+          let ext = $('#inputfile').val().split('.').pop().toLowerCase();
+          if($.inArray(ext, ['jpg','jpeg','png','tiff','tif']) == -1) {
+            $("#inputfile").val(null);
+            alert('only jpeg/jpg/png/tiff files are allowed!');
+          }
+      });
+    </script>
+
+
+   <section class="pink-block">
+      <div class="shear block-size">
+          <img class="icon-back"   src="{{ url_for('static', filename='images/icon-back.svg') }}">
+          <img id="icon-hand"      src="{{ url_for('static', filename='images/icon-hand.svg') }}">
+        <h3>USER-FRIENDLY INTERFACE</h3>
+        <p>??????????? ???? ????? ??????? ??????? ??????? ? ????????????????? ????????????.
+        <br>?????? ?? ????? ??????? ????????? ????????, ????? ?????????? ??????.</p>
+       </div>
+      <div class="shear-small block-size">
+          <img class="icon-back"   src="{{ url_for('static', filename='images/icon-back.svg') }}">
+          <img id="icon-mol"       src="{{ url_for('static', filename='images/icon-mol.svg') }}">
+        <h3>AI Neural Networks</h3>
+        <p>? ?????? MycetoZoa ????? ????? ?????????? ????????? ?????, ??????????? ??????????
+        ??????? ??????? ?? ????????????? ????????? ????? ???? ???????????? ???? Diderma.</p>
+       </div>
+      <div class="shear-small block-size">
+          <img class="icon-back"   src="{{ url_for('static', filename='images/icon-back.svg') }}">
+          <img id="icon-round"     src="{{ url_for('static', filename='images/icon-round.svg') }}">
+        <h3>Analytics</h3>
+        <p>???????? ????????????? 80+%. ?????? ?????? ?? ??????? ???????????, MycetoZoa ?????????
+        ??????? XLS-???? ? ??????? ? ??????????? ????????????? ??? ??????????? ?????? ? ???????.</p>
+       </div>
+   </section>
+
+  <img class="blue-spore"  src="{{ url_for('static', filename='images/spore-side-blue.svg') }}">
+
+   <section class="shear" id="Mycetozoa">
+  <h2>Mycetozoa</h2>
+  <p>Spores are unicellular, airborne propagules of different organisms (from plants and fungi to protists) usually 5-50 µm in size, spherical to ellipsoid, and their surface is covered with various ornaments, which consist of warts, spines, ridges and all combinations of these.
+<br>These spore ornaments often vary between species.<br>For fungi and slime molds, spore ornamentation is one of the most distinctive characters for species differentiation.
+</p>
+  <p>Distinguishing the spore ornaments is so far the domain of skilled taxonomists – you need a good eye to memorize and tell apart the manifold varieties of such ornaments.<br> A quantitative approach would enable us to use the parameters describing spore ornamentation in all kinds of analyses, like multivariate statistics, numerical taxonomy etc. </p>
+  <p>Thus, we would like to develop a method for an automated quantitative analysis of spore ornamentation patterns from SEM micrographs done with the critical point drying.</p>
+   </section>
+
+   <img class="orange-spore" src="{{ url_for('static', filename='images/spore-side-orange.svg') }}">
+
+   <section class="shear-big" id="tech">
+  <h2>Technology</h2>
+  <p> Artificial neural networks are a simplified analogue of the natural neural networks in the human brain. AI is one of the best way for solving problems of machine vision, speech recognition, medical diagnoses, etc.</p>
+  <p>The machine sifts a large amount of data through itself and learns to recognition -  is it  the desired object or it is not? And so, some time later, the system becomes able to recognize given objects: from numbers to animals, from airplanes to plant types.</p>
+  <p>Recognition technology MycetoZoa is one of type of artificial neural networks - CNN (convolutional neural networks).
+<br>CNN are extremely effective for recognizing visual patterns (images, visual objects) in digital images and video. They are resistant to distortion and are able to recognize patterns within wide limits of variability.</p>
+   </section>
+
+   <footer class="contacts" id="footer">
+
+     <p class="b1 shear">Recognition of<br>Diderma species<br> using <br>deep machine learning
+     <br>based on the ornamentation<br>of spores</p>
+     <p class="shear">© 2019-2020 MycetoZoa.<br>
+      All rights reserved</p>
+     <p class="b3 shear-right">Contact us       </p>
+     <p class="b4 shear-right">mycetozoa.app@gmail.com</p>
+
+     <img class="footer-logo"  src="{{ url_for('static', filename='images/logo.svg') }}">
+     <img class="icons-social" src="{{ url_for('static', filename='images/icons_social.svg') }}">
+
+   </footer>
+
+</div>
+</body>
+</html>
